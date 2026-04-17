@@ -1,0 +1,107 @@
+/* Configurações Gerais */
+body {
+    font-family: "Arial", sans-serif;
+}
+
+.tabela-brasileirao {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #DDDDDD; /* Borda principal */
+}
+
+/* Estilo das Células e Alinhamento */
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #DDDDDD; /* Separação entre linhas */
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Colunas com largura igual (exceto %) */
+th:not(.col-pct), td:not(.bg-cinza:last-child) {
+    width: 50px;
+}
+
+/* Títulos das Colunas */
+th {
+    font-size: 13px;
+    color: #999999;
+    font-weight: bold;
+}
+
+/* Nomes dos Times */
+.time {
+    text-align: left;
+    color: #666666;
+    font-weight: bold;
+    width: 250px !important; /* Ajuste para o nome do time */
+}
+
+/* Coluna de Pontos (P) */
+.pts {
+    color: black !important;
+    font-weight: bold;
+}
+
+/* Demais colunas de classificação */
+td {
+    color: #666666;
+}
+
+/* Cores de Fundo Específicas (P, V, D, GC, %) */
+.bg-cinza {
+    background-color: #F7F7F7;
+}
+
+/* Estilização das Posições (Cores conforme zona) */
+.pos {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.libertadores .pos { color: #003366; }
+.pre-libertadores .pos { color: #1398BE; }
+.sul-americana .pos { color: #DE9800; }
+.neutro .pos { color: #CCCCCC; }
+.rebaixados .pos { color: #C91B04; }
+
+/* Bordas Especiais (Exceção entre 4/5 e 16/17) */
+.border-bottom-thick {
+    border-bottom: 2px solid #CCCCCC !important;
+}
+
+/* Legendas */
+.legendas-container {
+    margin-top: 15px;
+}
+
+.zona-classificacao {
+    font-size: 10px;
+    color: #8F8F8F;
+    margin-bottom: 5px;
+}
+
+.item-legenda {
+    margin-right: 15px;
+}
+
+.box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.azul-marinho { background-color: #003366; }
+.azul-celeste { background-color: #1398BE; }
+.laranja { background-color: #DE9800; }
+.vermelho { background-color: #C91B04; }
+
+.siglas-legenda {
+    font-size: 10px;
+    color: #555555;
+}
+
+.siglas-legenda strong {
+    font-weight: bold;
+}
